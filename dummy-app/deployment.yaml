@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mynginx
+  name: nanaones
 spec:
   replicas: 1
   selector:
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - image: nginx
-        name: mynginx
+        name: nanaones
         ports:
         - containerPort: 80
